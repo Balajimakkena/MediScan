@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-const GOOGLE_PLACES_API_KEY = ' AIzaSyCePfDd_Xd8k9PA7gm2Ba8Xc8GF5FN2x4I  ';
+const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY;
 
 interface Pharmacy {
   id: string;

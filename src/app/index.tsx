@@ -21,11 +21,11 @@ import {
 } from 'react-native';
 import { auth, db } from '../firebaseConfig';
 
-//const GROQ_API_KEY = ' ';
+const GROQ_API_KEY = process.env.GROQ_API_KEY;
 
 WebBrowser.maybeCompleteAuthSession();
 
-//const GOOGLE_CLIENT_ID = ' ';
+const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID ;
 
 export default function HomeScreen() {
   const router = useRouter();
